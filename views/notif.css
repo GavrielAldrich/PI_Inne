@@ -1,0 +1,78 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 0;
+    margin: 0;
+    background-image: url(Bg\ login.JPG);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.notifpesanan {
+    width: 360px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ffffff;
+    color: #000;
+    text-align: center;
+    border-radius: 50px;
+    padding: 10px 10px 30px;
+    box-shadow: 0px 6px 18px -5px #f1a9cc;
+
+}
+
+    button.close {
+        width: 30px;
+        font-size: 20px;
+        color: #000;
+        align-self: flex-end;
+        background-color: transparent;
+        border: none;
+        margin-bottom: 10px;
+    }
+
+    img {
+        width: 100px;
+    }
+
+    p {
+        margin-bottom: 30px;
+        font-size: 14px;
+        justify-content: center;
+    }
+
+    h1{
+        margin-bottom: 1px;
+        font-size: 25px;
+    }
+
+    button.accept {
+        background-color: #e84393;
+        border: none;
+        border-radius: 5px;
+        width: 200px;
+        padding: 14px;
+        font-size: 16px;
+        color: white;
+        box-shadow: 0px 6px 18px -5px rgb(197, 122, 122);
+    }
+
+    button.accept:hover {
+        background-color: #ad497a;
+    }
+
+    a {
+        background-color: #e84393;
+        border: none;
+        border-radius: 5px;
+        width: 200px;
+        padding: 14px;
+        font-size: 16px;
+        color: white;
+        box-shadow: 0px 6px 18px -5px rgb(197, 122, 122);
+    }
+    a:hover{
+        background-color: #ad497a;
+    }

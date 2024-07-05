@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" type="x-icon" href="yarny.jpg">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OwianaCrafts</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+</head>
+
+<body>
+    <script src="PI.js"></script>
+
+    <header>
+
+        <input type="checkbox" name="" id="toggler">
+        <label for="toggler" class="bx bx-menu icon"></label>
+
+        <div class="logo">
+            <img src="yarnlogo.jpg" alt="">
+            <a href="#">Owiana</a>
+            <span>Crafts!</span>
+        </div>
+
+        <nav class="navbar">
+            <a href="/">Beranda</a>
+            <a href="/edukasi">Edukasi Merajut</a>
+            <a href="/produk">Produk</a>
+        </nav>
+
+        <div class="icons">
+            <% if (userLoggedIn) { %>
+                <a href="/logout"  class='bx bx-log-out-circle' title="Logout"></a>
+            <% } else { %>
+                <a href="/login" class='bx bxs-user' title="Login"></a>
+            <% } %>
+        </div>
+        
+    </header>

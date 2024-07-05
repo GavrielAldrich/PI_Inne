@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" type="x-icon" href="yarnn.jpg">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log In</title>
+    <link rel="stylesheet" href="slidestyle.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+</head>
+
+<body>
+    <script src="PI.js"></script>
+    
+    <header>
+        <nav>
+            <a href="#"><img src="yarnlogo.jpg" alt="logo"></a>
+        </nav>
+
+    </header>
+
+    <div class="form-wrapper">
+        <h2>Log In</h2>
+        <form action="/login" method="POST">
+            <div class="form-control">
+                <input type="text" name="emailusername" required>
+                <label>Email/Username</label>
+            </div>
+            <div class="form-control">
+                <input type="password" name="password" required>
+                <label>Password</label>
+            </div>
+            <button type="submit">Log In</button>
+            <div class="form-help"> 
+                <div class="remember-me">
+                    <input type="checkbox" id="remember-me">
+                    <label for="remember-me">Ingat saya</label>
+                </div>
+            </div>
+        </form>
+        <p>Belum punya akun? <a href="/register">Daftar</a></p>
+
+    </div>
+</body>
+
+</html>
