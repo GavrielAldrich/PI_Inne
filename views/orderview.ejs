@@ -1,0 +1,52 @@
+<!-- orderview.ejs -->
+
+<%- include ("partials/header.ejs") %>
+
+<section class="produk" id="produk">
+  <div class="produk">
+    <h1 class="heading"><span>Data</span> Orderan</h1>
+    <div class="produk-container">
+      <div class="produk-card">
+        <div class="produk-content">
+          <div style="margin-bottom: 20px;">
+            <a href="/adminpage">Kelola Produk</a>
+          </div>
+          <!-- Link to add new item -->
+          <table class="table1" style="margin: 0 auto; width: 80%;">
+            <tr>
+              <th>No</th>
+              <th>Kategori</th>
+              <th>Nama Produk</th>
+              <th>Qty</th>
+              <th>Total</th>
+              <th>Cust Name</th>
+              <th>Cust Contact</th>
+              <th>Cust Alamat</th>
+              <th>Catatan</th>
+              <th>Aksi</th> <!-- New column for actions -->
+            </tr>
+            <% products.forEach((order, index) => { %>
+              <tr>
+                <td><%= index + 1 %></td>
+                <td><%= order.kategori_produk %></td>
+                <td><%= order.nama_produk %></td>
+                <td><%= order.qty %></td>
+                <td>Rp. <%= order.total_harga %></td>
+                <td><%= order.buyer_fullname %></td>
+                <td><%= order.buyer_email %></td>
+                <td><%= order.buyer_address %></td>
+                <td><%= order.buyer_note %></td>
+                <td>
+                  <a href="/deleteorder/<%= order.id %>" onclick="return confirm('Are you sure you want to delete this order?')">Delete</a>
+                </td>
+              </tr>
+            <% }); %>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+</body>
+</html>

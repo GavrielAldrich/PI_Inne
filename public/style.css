@@ -1048,3 +1048,269 @@ p {
 }
 
 /* detail produk */
+
+
+/*design table 1*/
+.table1,td,th, 
+.table-pesanan,td,th{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #232323;
+    border-collapse: collapse;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.table1 th, .table-pesanan th {
+    background-color: #ffe3e1;
+}
+
+.table1,td,th {
+    border: 1px solid #999;
+    padding: 8px 9px;
+    font-size: 1.5rem;
+    justify-content: space-between;
+}
+
+.kategori .heading {
+    padding: 2rem 1%;
+}
+
+.kategori h2{
+    font-size: 25px;
+    color: #000000;
+}
+
+.kategori table tr td{
+    border: none;
+    text-align: left;
+}
+
+.kategori input{
+    border: solid 2px #666;
+    padding: 5px 7px;
+}
+
+.kategori .file{
+    border: none;
+    padding: 5px 7px;
+}
+
+/* .kategori input::-webkit-input-placeholder{
+    color: #e84393;
+} */
+
+.kategori select{
+    width: 200px;
+    border: none;
+    background-color: #fff8f7;
+    padding: 5px;
+}
+
+.kategori button{
+    padding: 5px 10px;
+    border: none;
+    background-color: #e84393;
+    color: #fff;
+    border-radius: 5px;   
+}
+
+.kategori .kategori-container {
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.kategori .kategori-container .kategori-card {
+    width: 100%;
+    box-shadow: 0 .5rem 1.5rem rgba(0, 0, 0, .1);
+    padding: 10px;
+    justify-content: space-between;
+    align-self: center;
+    background-size: cover;
+}
+
+.kategori .kategori-container .kategori-card .kategori-content img {
+    width: 60px;
+    justify-content: center;
+}
+
+.kategori .kategori-container .kategori-card .kategori-content {
+    padding: 5px;
+}
+
+.kategori .kategori-container .kategori-card .kategori-content h1 {
+    font-size: 2rem;
+    text-align: center;
+    color: #47859a;
+    padding-top: 1rem;
+    padding-bottom: 1.5rem;
+}
+
+.kategori .kategori-container .kategori-card .kategori-content h4 {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    font-size: 1.4rem;
+    color: #000;
+    text-align: center;
+    margin: .7rem 0;
+    width: 20%;
+    background-color: #ffe3e1;
+}
+
+.kategori .kategori-container .kategori-card .kategori-content h4:hover {
+    color: var(--pink);
+}
+
+.produk .heading {
+    padding: 2rem 1%;
+}
+
+.produk .produk-container {
+    justify-content: space-between;
+    align-items: center;
+}
+
+.produk .produk-container .produk-card {
+    width: 100%;
+    box-shadow: 0 .5rem 1.5rem rgba(0, 0, 0, .1);
+    padding: 15px;
+    justify-content: space-between;
+    align-self: center;
+}
+
+.produk .produk-container .produk-card .produk-content img {
+    width: 60px;
+    justify-content: center;
+}
+
+.produk .produk-container .produk-card .produk-content {
+    padding: 5px;
+}
+
+.produk .produk-container .produk-card .produk-content h1 {
+    font-size: 2rem;
+    text-align: center;
+    color: #47859a;
+    padding-top: 1rem;
+    padding-bottom: 1.5rem;
+}
+
+.produk .produk-container .produk-card .produk-content a {
+    padding-top: 1rem;
+    padding-bottom: 5rem;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 1.5rem;
+    color: #000;
+    text-align: center;
+    margin: .7rem 0;
+    width: 30%;
+    background-color: #ffe3e1;
+}
+
+.produk .produk-container .produk-card .produk-content a:hover {
+    color: var(--pink);
+}
+
+.footer {
+    display: flex;
+    align-items: center;
+    background: #ffe3e1;
+    padding: 2rem 9%;
+    justify-content: center;
+    text-align: center;
+}
+
+.footer-box h2 {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #47859a;
+}
+
+.footer-box p {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2;
+}
+
+.social a .bx {
+    font-size: 20px;
+    color: #000;
+    border-radius: 0.5rem;
+}
+
+.social a .bx:hover {
+    background: #fff8f7;
+    color: var(--pink);
+}
+
+.footer-box h3 {
+    font-weight: 600;
+    margin-bottom: 2px;
+    font-size: 2rem;
+    color: #47859a;
+}
+
+.footer-box li a {
+    color: #666;
+}
+
+.footer-box li a:hover {
+    color: var(--pink);
+}
+
+.notifikasi .heading {
+    padding: 2rem 1%;
+}
+
+.notifikasi .notifikasi-container {
+    justify-content: space-between;
+    align-items: center;
+}
+
+.notifikasi .notifikasi-container .notfi-card {
+    width: 100%;
+    box-shadow: 0 .5rem 1.5rem rgba(0, 0, 0, .1);
+    padding: 15px;
+    justify-content: space-between;
+    align-self: center;
+}
+
+.produk .produk-container .produk-card .produk-content img {
+    width: 60px;
+    justify-content: center;
+}
+
+.produk .produk-container .produk-card .produk-content {
+    padding: 5px;
+}
+
+.produk .produk-container .produk-card .produk-content h1 {
+    font-size: 2rem;
+    text-align: center;
+    color: #47859a;
+    padding-top: 1rem;
+    padding-bottom: 1.5rem;
+}
+
+.produk .produk-container .produk-card .produk-content a {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    font-size: 1.5rem;
+    color: #000;
+    text-align: center;
+    margin: .7rem 0;
+    width: 30%;
+    background-color: #ffe3e1;
+}
+
+.produk .produk-container .produk-card .produk-content a:hover {
+    color: var(--pink);
+}

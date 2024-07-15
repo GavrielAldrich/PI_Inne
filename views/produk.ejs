@@ -8,105 +8,30 @@
 
         <div class="produk">
             <div class="box-container">
-                <div class="box-card">
-                    <div class="cart-container">
-                        <span class="diskon">BARU</span>
-                        <div class="image">
-                            <img src="goldfish.jpg" alt="" />
-                            <div class="icons">
-                                <a href="detail.html">
-                                    <i class='bx bx-shopping-bag' title="Beli Sekarang"></i>
-                                </a>
+                <% products.map((item)=>{ %>
+                    <% if(item.product_type == "Gantungan"){ %>
+                        <div class="box-card">
+                            <div class="cart-container">
+                                <span class="diskon">BARU</span>
+                                <div class="image">
+                                    <img src="/images/<%= item.product_image %>" alt="<%= item.product_name %>" />
+                                    <div class="icons">
+                                        <a href="/detail/<%= item.id %>">
+                                            <i class='bx bx-shopping-bag' title="Beli Sekarang"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="content">
+                                    <h3><%= item.product_name %></h3>
+                                    <div class="price">Rp.<%= (() => { 
+                                        let formattedTotalHarga = item.product_price.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
+                                        return formattedTotalHarga;
+                                      })() %></div>
+                                </div>
                             </div>
                         </div>
-                        <div class="content">
-                            <h3>Gantungan Kunci Crochet Goldfish</h3>
-                            <div class="price">Rp.22.000</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="box-card">
-                    <div class="cart-container">
-                        <span class="diskon">BARU</span>
-                        <div class="image">
-                            <img src="toothless.jpg" alt="" />
-                            <div class="icons">
-                                <a href="detail.html">
-                                    <i class='bx bx-shopping-bag' title="Beli Sekarang"></i>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="content">
-                            <h3>Gantungan Kunci Crochet Toothless</h3>
-                            <div class="price">Rp.38.000</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="box-card">
-                    <div class="cart-container">
-                        <span class="diskon">BARU</span>
-                        <div class="image">
-                            <img src="stroberi.jpg" alt="" />
-                            <div class="icons">
-                                <a href="detail.html">
-                                    <i class='bx bx-shopping-bag' title="Beli Sekarang"></i>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="content">
-                            <h3>Gantungan Crochet Strawberry Charm</h3>
-                            <div class="price">Rp.40.000</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="box-card">
-                    <div class="cart-container">
-                        <div class="image">
-                            <img src="babyyoda.jpg" alt="" />
-                            <div class="icons">
-                                <a href="detail.html">
-                                    <i class='bx bx-shopping-bag' title="Beli Sekarang"></i>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="content">
-                            <h3>Gantungan Crochet Baby Yoda</h3>
-                            <div class="price">Rp.50.000</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="box-card">
-                    <div class="cart-container">
-                        <div class="image">
-                            <img src="butterfly.jpg" alt="" />
-                            <div class="icons">
-                                <a href="detail.html">
-                                    <i class='bx bx-shopping-bag' title="Beli Sekarang"></i>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="content">
-                            <h3>Gantungan Crochet Butterfly Charm</h3>
-                            <div class="price">Rp.12.000</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="box-card">
-                    <div class="cart-container">
-                        <div class="image">
-                            <img src="lotso.jpg" alt="" />
-                            <div class="icons">
-                                <a href="/detail">
-                                    <i class='bx bx-shopping-bag' title="Beli Sekarang"></i>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="content">
-                            <h3>Gantungan Kunci Crochet Lotso</h3>
-                            <div class="price">Rp.68.000</div>
-                        </div>
-                    </div>
-                </div>
+                        <%  }%>
+                    <% }) %>
             </div>
         </div>
 
@@ -116,106 +41,27 @@
 
         <div class="produk">
             <div class="box-container">
-                <div class="box-card">
-                    <div class="cart-container">
-                        <span class="diskon">BARU</span>
-                        <div class="image">
-                            <img src="katun1.jpg" alt="" />
-                            <div class="icons">
-                                <a href="detail.html">
-                                    <i class='bx bx-shopping-bag' title="Beli Sekarang"></i>
-                                </a>
+                <% products.map((item)=>{ %>
+                    <% if(item.product_type == "Alat Merajut"){ %>
+                        <div class="box-card">
+                            <div class="cart-container">
+                                <span class="diskon">BARU</span>
+                                <div class="image">
+                                    <img src="/images/<%= item.product_image %>" alt="<%= item.product_name %>" />
+                                    <div class="icons">
+                                        <a href="/detail/<%= item.id %>">
+                                            <i class='bx bx-shopping-bag' title="Beli Sekarang"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="content">
+                                    <h3><%= item.product_name %></h3>
+                                    <div class="price">Rp.<%= item.product_price %></div>
+                                </div>
                             </div>
                         </div>
-                        <div class="content">
-                            <h3>1-12 Benang Rajut Katun Susu Impor 5 PLY Milk Cotton Sapi Yarn Crochet Yarn</h3>
-                            <div class="price">Rp.9.000</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="box-card">
-                    <div class="cart-container">
-                        <span class="diskon">BARU</span>
-                        <div class="image">
-                            <img src="gunting.jpg" alt="" />
-                            <div class="icons">
-                                <a href="detail.html">
-                                    <i class='bx bx-shopping-bag' title="Beli Sekarang"></i>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="content">
-                            <h3>Gunting bordir/ gunting ujung lengkung/ gunting benang</h3>
-                            <div class="price">Rp.12.000</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="box-card">
-                    <div class="cart-container">
-                        <span class="diskon">BARU</span>
-                        <div class="image">
-                            <img src="hakpen1.jpg" alt="" />
-                            <div class="icons">
-                                <a href="detail.html">
-                                    <i class='bx bx-shopping-bag' title="Beli Sekarang"></i>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="content">
-                            <h3>Hakpen Jarum Rajut Aluminium</h3>
-                            <div class="price">Rp.9.000</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="box-card">
-                    <div class="cart-container">
-                        <div class="image">
-                            <img src="stitchmarker.jpg" alt="" />
-                            <div class="icons">
-                                <a href="detail.html">
-                                    <i class='bx bx-shopping-bag' title="Beli Sekarang"></i>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="content">
-                            <h3>Penanda Rajut Plastik Stitch Marker Crochet per 5pcs</h3>
-                            <div class="price">Rp.1.000</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="box-card">
-                    <div class="cart-container">
-                        <div class="image">
-                            <img src="dakron.jpg" alt="" />
-                            <div class="icons">
-                                <a href="detail.html">
-                                    <i class='bx bx-shopping-bag' title="Beli Sekarang"></i>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="content">
-                            <h3>Dakron per 100 gram / Kapas Silikon / Isi Bantal / Boneka / Kasur - Grade A+ dari Nilon
-                            </h3>
-                            <div class="price">Rp.2.500</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="box-card">
-                    <div class="cart-container">
-                        <div class="image">
-                            <img src="safetyeyes.jpg" alt="" />
-                            <div class="icons">
-                                <a href="detail.html">
-                                    <i class='bx bx-shopping-bag' title="Beli Sekarang"></i>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="content">
-                            <h3>Mata Boneka Bulat Hitam / Mata AMIGURUMI / Safety Eyes 5 MM per 10pcs</h3>
-                            <div class="price">Rp.2.500</div>
-                        </div>
-                    </div>
-                </div>
+                        <%  }%>
+                    <% }) %>
             </div>
         </div>
     </section>

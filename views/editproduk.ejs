@@ -1,0 +1,55 @@
+<%- include ("partials/header.ejs") %>
+
+<section class="kategori" id="kategori">
+    <div class="kategori">
+        <h1 class="heading"><span> Edit </span> Produk </h1>
+        <div class="kategori-container">
+            <div class="kategori-card">
+                <div class="kategori-content">
+                    <h2><b>Edit Produk</b></h2>
+                    <form method="post" action="/editproduk/<%= product.id %>" enctype="multipart/form-data">
+                        <fieldset>
+                            <table border="0">
+                                <tr>
+                                    <td>Kategori </td>
+                                    <td>: 
+                                        <select name="category">
+                                            <option value="Gantungan" <%= product.product_type === 'Gantungan' ? 'selected' : '' %>>Gantungan</option>
+                                            <option value="Alat Merajut" <%= product.product_type === 'Alat Merajut' ? 'selected' : '' %>>Alat Merajut</option>
+                                        </select>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Nama Produk</td>
+                                    <td>: <input type="text" name="name" size="40" placeholder="Masukkan Nama Produk"
+                                            value="<%= product.product_name %>" required></td>
+                                </tr>
+                                <tr>
+                                    <td>Harga</td>
+                                    <td>: <input type="text" name="price" size="40" placeholder="Masukkan Harga"
+                                            value="<%= product.product_price %>"></td>
+                                </tr>
+                                <tr>
+                                    <td>Deskripsi Produk</td>
+                                    <td>: <input type="text" name="desc" size="40" placeholder="Masukkan Deskripsi"
+                                            value="<%= product.product_desc %>"></td>
+                                </tr>
+                                <tr>
+                                    <td>Gambar</td>
+                                    <td>: 
+                                        <input class="file" type="file" name="image" accept="image/*">
+                                        <input type="hidden" name="currentImage" value="<%= product.product_image %>">
+                                    </td>
+                                </tr>
+                            </table>
+                            <button type="submit">Edit</button>
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+</body>
+</html>

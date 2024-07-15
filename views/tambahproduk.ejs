@@ -1,0 +1,56 @@
+<%- include ("partials/header.ejs") %>
+
+<section class="kategori" id="kategori">
+
+    <div class="kategori">
+
+        <h1 class="heading"><span> Tambah </span> Produk </h1>
+        <div class="kategori-container">
+            <div class="kategori-card">
+                <div class="kategori-content">
+
+                    <h2><b>Tambah Produk</b></h2>
+                    <form method="post" action="/tambahproduk" enctype="multipart/form-data">
+                        <fieldset>
+                            <table border="0">
+                                <tr>
+                                    <td>Kategori </td>
+                                    <td>: <select name="category">
+                                            <option value="Gantungan">Gantungan</option>
+                                            <option value="Alat Merajut">Alat Merajut</option>
+                                        </select>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Nama Produk</td>
+                                    <td>: <input type="text" name="name" size="40"
+                                            placeholder="Masukkan Nama Produk" required></td>
+                                </tr>
+                                <tr>
+                                    <td>Harga</td>
+                                    <td>: <input type="text" name="price" size="40" placeholder="Masukkan Harga">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Deskripsi Produk</td>
+                                    <td>: <input type="text" name="desc" size="40" placeholder="Masukkan Deskripsi">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Gambar</td>
+                                    <td>: <input class="file" type="file" name="image" accept="image/*" required> </td>
+                                </tr>
+                            </table>
+                            <button type="submit">Tambah</button>
+                        </fieldset>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+</body>
+
+</html>
